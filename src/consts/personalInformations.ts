@@ -1,0 +1,1 @@
+export const jobTitle:string = "Computer Engineer";

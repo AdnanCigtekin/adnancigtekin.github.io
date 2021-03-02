@@ -1,0 +1,22 @@
+@keyframes flicker-anim {
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+}
+
+.fast-flicker {
+    -webkit-animation: flicker-anim .1s;
+    -moz-animation: flicker-anim .1s;
+    -o-animation: flicker-anim .1s;
+     animation: flicker-anim .1s;
+     animation-iteration-count: 14;
+     font-family: Helvetica;
+     font-size: 1.5em;
+    }
+
+.avatar-image {
+    
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 20%;
+}
