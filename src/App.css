@@ -20,3 +20,20 @@
     border: 3px solid white;
     width: 20%;
 }
+
+.career-node {
+    height: 30vh;
+    width:30vw;
+    background:#2f3b42;
+    margin-top:2vh;
+}
+
+.node-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+}

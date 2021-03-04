@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import AnimeTest from './components/AnimeTest'
+import {CareerPath} from './components/CareerPath'
 import {TitleContainer} from './components/TitleContainer'
 import {ProfilePictureContainer} from "./components/ProfilePictureContainer"
 
@@ -10,7 +10,7 @@ function App() {
       <ProfilePictureContainer></ProfilePictureContainer>
       <h1>Adnan Çığtekin</h1>
       <TitleContainer revealSpeed={75}></TitleContainer>
-      <AnimeTest></AnimeTest>
+      <CareerPath></CareerPath>
     </div>
   );
 }
