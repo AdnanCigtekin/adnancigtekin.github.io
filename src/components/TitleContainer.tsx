@@ -5,10 +5,17 @@ import React, {useState, useEffect} from 'react'
 import { jobTitle } from "../consts/personalInformations";
 import {TitleInterface} from "../ınterfaces/PersonalInfoInterface"
 
+
+
+
+
+
 export const TitleContainer = (settings:TitleInterface) => {
 
     const [name,setName] = useState("");
-
+    // useEffect(() => {
+    //     window.addEventListener('scroll',handleScroll)
+    // },[])
     
     useEffect(() => {
         let currentTitleIndex:number = 0;
@@ -29,8 +36,8 @@ export const TitleContainer = (settings:TitleInterface) => {
 
     },[]);
 
-
     return <>
-        <p className="fast-flicker">{name}</p>
+         
+        <p className="my-title fast-flicker">{name}</p>
     </>
 }
