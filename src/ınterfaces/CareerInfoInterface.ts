@@ -3,7 +3,8 @@ export interface CareerInfoInterface{
         Company:string,
         StartDate:string,
         EndDate:string,
-        Title:string
+        Title:string,
+        LogoUrl:string
     }
 
 }
