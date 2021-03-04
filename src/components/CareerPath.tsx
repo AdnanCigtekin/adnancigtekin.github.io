@@ -4,34 +4,49 @@ import ReactAnime from 'react-animejs'
 import { CareerNode } from "./CareerNode";
 import { careerInformation } from "../consts/careerInformation";
 import {CareerInfoInterface} from "../ınterfaces/CareerInfoInterface";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { CheckInViewport } from "../utility/CheckInViewport";
+
 export const CareerPath = () => {
     const {Anime,stagger} = ReactAnime
+    const [scrolledTo,setScrolledTo] = useState(false);
+    const [showPath,setShowPath] = useState(false);
     
     useEffect(() => {
         const myItem = document.querySelector('#career-path');
         document.addEventListener('scroll', function (){
-          console.log(CheckInViewport(myItem))
+              setScrolledTo(CheckInViewport(myItem))
         })
       },[])
 
+    useEffect(() => {
+        if(scrolledTo !== undefined && scrolledTo === true)
+            setShowPath(true)
+    },[scrolledTo])
 
     return <div >
         <div id="career-path"></div>
-        <Anime
+        {showPath === false ? 
+        <div style={{width:'10px',height:'100px'}}></div>
+
+            :
+            <Anime
             initial={[
                 {
                 targets:"#Node",
                 translateX : '35vw',
                 easing: "spring",
-                delay : stagger(80) 
+                delay : stagger(500) 
             }
         ]}
         >
             {careerInformation.map((element) =><CareerNode info={element}></CareerNode>
+            
             )}
         </Anime>
+        
+        }
+
     </div>
 }
 

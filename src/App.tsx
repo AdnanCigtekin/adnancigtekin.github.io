@@ -19,6 +19,7 @@ function App() {
         <TitleContainer revealSpeed={75}></TitleContainer>
       </div>
         <CareerPath></CareerPath>
+        <div style={{width:'10px',height:'100px'}}></div>
     </div>
   );
 }
