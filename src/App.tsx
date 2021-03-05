@@ -3,6 +3,7 @@ import {CareerPath} from './components/CareerPath'
 import {TitleContainer} from './components/TitleContainer'
 import {ProfilePictureContainer} from "./components/ProfilePictureContainer"
 import { useEffect } from 'react';
+import { ContactContainer } from './components/ContactContainer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <ProfilePictureContainer></ProfilePictureContainer>
         <h1 className="my-name">Adnan Çığtekin</h1>
         <TitleContainer revealSpeed={75}></TitleContainer>
+        <ContactContainer></ContactContainer>
       </div>
         <CareerPath></CareerPath>
         <div style={{width:'10px',height:'100px'}}></div>
