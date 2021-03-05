@@ -34,10 +34,10 @@ export const TitleContainer = (settings:TitleInterface) => {
         }
 
 
-    },[]);
+    },[settings.revealSpeed]);
 
     return <>
          
-        <p className="my-title fast-flicker">{name}</p>
+        <p className="my-title">{name}</p>
     </>
 }

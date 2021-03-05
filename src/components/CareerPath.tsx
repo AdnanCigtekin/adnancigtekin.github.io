@@ -3,7 +3,6 @@
 import ReactAnime from 'react-animejs'
 import { CareerNode } from "./CareerNode";
 import { careerInformation } from "../consts/careerInformation";
-import {CareerInfoInterface} from "../ınterfaces/CareerInfoInterface";
 import { useEffect, useState } from 'react';
 import { CheckInViewport } from "../utility/CheckInViewport";
 
@@ -34,7 +33,7 @@ export const CareerPath = () => {
             initial={[
                 {
                 targets:"#Node",
-                translateX : '35vw',
+                translateX : '27.5vw',
                 easing: "spring",
                 delay : stagger(500) 
             }
