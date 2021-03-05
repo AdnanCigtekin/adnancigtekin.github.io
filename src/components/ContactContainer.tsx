@@ -7,15 +7,15 @@ export const ContactContainer = () => {
 
 
     return <div>
-
-        <a href="https://github.com/AdnanCigtekin" target="_blank">
-            <img src={GithubIcon}/>
-        </a>
         <a href="https://www.linkedin.com/in/adnancigtekin/" target="_blank">
-            <img src={LinkedinIcon}/>
+            <img src={LinkedinIcon} style={{width:"5vw",padding:"2vh"}}/>
         </a>
+        <a href="https://github.com/AdnanCigtekin" target="_blank">
+            <img src={GithubIcon} style={{width:"5vw",padding:"2vh"}} />
+        </a>
+
         <a href="mailto:cigtekinadnan@gmail.com" >
-            <img src={MailIcon}/>
+            <img src={MailIcon} style={{width:"5vw",padding:"2vh"}}/>
         </a>       
     </div>
 }
