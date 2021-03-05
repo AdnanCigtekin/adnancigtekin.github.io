@@ -4,6 +4,10 @@
         100% { opacity:1; }
 }
 
+.html, body {
+    overflow-x: hidden;
+}
+
 .fast-flicker {
     -webkit-animation: flicker-anim .1s;
     -moz-animation: flicker-anim .1s;
