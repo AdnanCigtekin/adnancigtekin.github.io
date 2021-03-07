@@ -17,7 +17,9 @@ function App() {
         <ProfilePictureContainer></ProfilePictureContainer>
         <h1 className="my-name">Adnan Çığtekin</h1>
         <TitleContainer revealSpeed={75}></TitleContainer>
-        <ContactContainer></ContactContainer>
+        <div style={{backgroundColor:"#2f3b42"}}>
+          <ContactContainer></ContactContainer>
+        </div>
         <img src={ArrowDown} style={{top:"90vh",left:"47.5vw",position:'absolute', width:"5vw"}} alt="Page Continues!"></img>
       </div>
         <CareerPath></CareerPath>
