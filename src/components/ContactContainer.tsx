@@ -14,7 +14,7 @@ export const ContactContainer = () => {
             <img src={GithubIcon} style={{width:"5vw",padding:"2vh"}} alt="My Github Account"/>
         </a>
 
-        <a href="mailto:cigtekinadnan@gmail.com" >
+        <a target="_top" href="mailto:cigtekinadnan@gmail.com" >
             <img src={MailIcon} style={{width:"5vw",padding:"2vh"}} alt="Send A Mail To Me!"/>
         </a>       
     </div>
