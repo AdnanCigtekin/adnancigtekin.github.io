@@ -3,6 +3,10 @@ import LinkedinIcon from "../resources/linkedin.svg"
 import MailIcon from "../resources/envelope-fill.svg";
 
 
+
+
+
+
 export const ContactContainer = () => {
 
 
@@ -13,9 +17,9 @@ export const ContactContainer = () => {
         <a href="https://github.com/AdnanCigtekin" rel="noreferrer" target="_blank">
             <img src={GithubIcon} style={{width:"5vw",padding:"2vh"}} alt="My Github Account"/>
         </a>
-
-        <a target="_top" href="mailto:cigtekinadnan@gmail.com" >
+        {/* TODO: Enable this button when 'contact' section is created */}
+        {/* <a onClick={SendMail} >
             <img src={MailIcon} style={{width:"5vw",padding:"2vh"}} alt="Send A Mail To Me!"/>
-        </a>       
+        </a>        */}
     </div>
 }
