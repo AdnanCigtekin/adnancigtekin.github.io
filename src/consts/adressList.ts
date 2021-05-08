@@ -1,3 +1,3 @@
-export const IS_DEVELOPMENT=1;
-export const devServer = "https://localhost:3000";
-export const releaseServer = "https://adnancigtekin.github.io/personal-website/"
+export let IS_DEVELOPMENT=1;
+export const devServer = "http://localhost:8080";
+export const releaseServer = "https://personal-website-api-adnan.herokuapp.com"
