@@ -93,3 +93,11 @@
 .date-text {
     font-size: 1.5vw;
 }
+
+
+.github-panel{
+    background-color: #282e31;
+    width : 80vw;
+    height : 30vh;
+    margin:auto;
+}

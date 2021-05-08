@@ -29,11 +29,12 @@ function App() {
       </div>
       <div>
         <CareerPath></CareerPath>
-        <div style={{ width: "10px", height: "100px" }}></div>
+        <div style={{ width: "10px", height: "5vh" }}></div>
       </div>
       <div>
         <GithubContribution></GithubContribution>
       </div>
+        <div style={{ width: "10px", height: "5vh" }}></div>
     </div>
   );
 }
