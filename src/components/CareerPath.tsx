@@ -23,10 +23,13 @@ export const CareerPath = () => {
             setShowPath(true)
     },[scrolledTo])
 
+    const careerNodeAmount = careerInformation.length * 20;
+
+
     return <div >
         <div id="career-path"></div>
         {showPath === false ? 
-        <div style={{width:'10px',height:'100px'}}></div>
+        <div style={{width:'10px',height:`${careerNodeAmount}vw`}}></div>
 
             :
             <Anime
