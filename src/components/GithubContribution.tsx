@@ -53,13 +53,11 @@ const {Anime,stagger} = ReactAnime
   return (
     <div>
       <div id="github-contribution"></div>
-      {showPath === false ? (
+      {showPath === false || contribCount == 0 || contribCount === undefined ? (
         <div></div>
       ) : (
         <div className="github-panel">
-          {contribCount == 0 && contribCount !== undefined ? (
-            <div></div>
-          ) : (
+
 
             <div className="github-contrib-count">
             <Anime
@@ -82,7 +80,7 @@ const {Anime,stagger} = ReactAnime
                 </Anime>
                 <h1><span id="contribCount">{contribCount}</span></h1> contributions in the last year!
                 </div>
-          )}
+          
         </div>
       )}
     </div>
