@@ -103,6 +103,7 @@
 }
 
 .github-contrib-count{
+    font-size: 3vh;
     text-align:center;
-    padding: 6vh;
+    padding: 3vh;
 }
