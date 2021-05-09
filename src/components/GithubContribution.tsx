@@ -6,14 +6,14 @@ import { CheckInViewport } from "../utility/CheckInViewport";
 import ReactAnime from 'react-animejs'
 
 export const GithubContribution = () => {
-const {Anime,numeral} = ReactAnime
+const {Anime,stagger} = ReactAnime
   const [contribObj, setContribObj] = useState({} as GithubRequestInterface);
   const [contribCount, setContribCount] = useState(0);
 
   const [scrolledTo, setScrolledTo] = useState(false);
   const [showPath, setShowPath] = useState(false);
 
-
+  const [continueTimer, setContinueTimer] = useState(false);
 
   useEffect(() => {
     const myItem = document.querySelector("#github-contribution");
@@ -67,17 +67,20 @@ const {Anime,numeral} = ReactAnime
                 {
                 targets:"#contribCount",
                 innerText: [0, contribCount],
-                easing: "easeInExpo",
+                easing: "easeOutElastic(1, .1)",
                 round: true,
                 update: function(a) {
-                  const value = a.animations[0].currentValue;
-                  document.querySelector("#contribCount").innerHTML = value;
-                }
+                 
+                    const value = a.animations[0].currentValue;
+                    document.querySelector("#contribCount").innerHTML = value;
+
+                },
+                duration: 3000
             }
             ]}
             >
                 </Anime>
-                <span id="contribCount">{contribCount}</span> contributions in the last year!
+                <h1><span id="contribCount">{contribCount}</span></h1> contributions in the last year!
                 </div>
           )}
         </div>
