@@ -6,14 +6,13 @@ import { CheckInViewport } from "../utility/CheckInViewport";
 import ReactAnime from 'react-animejs'
 
 export const GithubContribution = () => {
-const {Anime,stagger} = ReactAnime
+const {Anime} = ReactAnime
   const [contribObj, setContribObj] = useState({} as GithubRequestInterface);
   const [contribCount, setContribCount] = useState(0);
 
   const [scrolledTo, setScrolledTo] = useState(false);
   const [showPath, setShowPath] = useState(false);
 
-  const [continueTimer, setContinueTimer] = useState(false);
 
   useEffect(() => {
     const myItem = document.querySelector("#github-contribution");
@@ -29,7 +28,7 @@ const {Anime,stagger} = ReactAnime
   useEffect(() => {
     axios
       .get(
-        IS_DEVELOPMENT == 1
+        IS_DEVELOPMENT === 1
           ? `${devServer}/gh_scrape`
           : `${releaseServer}/gh_scrape`
       )
@@ -53,7 +52,7 @@ const {Anime,stagger} = ReactAnime
   return (
     <div>
       <div id="github-contribution"></div>
-      {showPath === false || contribCount == 0 || contribCount === undefined ? (
+      {showPath === false || contribCount === 0 || contribCount === undefined ? (
         <div></div>
       ) : (
         <div className="github-panel">
