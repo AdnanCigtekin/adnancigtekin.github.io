@@ -77,7 +77,7 @@ const {Anime} = ReactAnime
             ]}
             >
                 </Anime>
-                <h1><span id="contribCount">{contribCount}</span></h1> contributions in the last year!
+                <h1><span id="contribCount">{contribCount}</span></h1> contributions in github in the last year!
                 </div>
           
         </div>
