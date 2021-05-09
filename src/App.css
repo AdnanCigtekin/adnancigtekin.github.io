@@ -101,3 +101,8 @@
     height : 30vh;
     margin:auto;
 }
+
+.github-contrib-count{
+    text-align:center;
+    padding: 5vh;
+}

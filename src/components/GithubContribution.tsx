@@ -61,7 +61,7 @@ const {Anime,stagger} = ReactAnime
             <div></div>
           ) : (
 
-            <div>
+            <div className="github-contrib-count">
             <Anime
             initial={[
                 {
