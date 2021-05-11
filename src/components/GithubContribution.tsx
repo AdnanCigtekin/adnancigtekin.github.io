@@ -39,7 +39,7 @@ export const GithubContribution = () => {
         .catch((error) => {
           console.error("There was an error!", error);
         });
-      },500)
+      },1000)
     }
 
   }, [backendAwake]);
