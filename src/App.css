@@ -49,8 +49,10 @@
 
 
 .career-node {
+    position : relative;
+    right : 100vw;
     height: 20vw;
-    width:45vw;
+    width:80vw;
     background:#2f3b42;
     margin-top:2vh;
 }

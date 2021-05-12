@@ -36,7 +36,7 @@ export const CareerPath = () => {
             initial={[
                 {
                 targets:"#Node",
-                translateX : '27.5vw',
+                translateX : '109.5vw',
                 easing: "spring",
                 delay : stagger(500) 
             }
