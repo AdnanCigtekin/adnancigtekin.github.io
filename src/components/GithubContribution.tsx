@@ -5,11 +5,14 @@ import { GithubRequestInterface } from "../ınterfaces/GithubRequestInterface";
 import { CheckInViewport } from "../utility/CheckInViewport";
 import ReactAnime from "react-animejs";
 import ReactLoading from 'react-loading';
+import {GithubCalendar} from './GithubCalendar'
+
 
 export const GithubContribution = () => {
   const { Anime } = ReactAnime;
   const [contribObj, setContribObj] = useState({} as GithubRequestInterface);
   const [contribCount, setContribCount] = useState(-1);
+  const [contribCalendar, setContribCalendar] = useState([]);
 
   const [scrolledTo, setScrolledTo] = useState(false);
   const [showPath, setShowPath] = useState(false);
@@ -77,6 +80,7 @@ export const GithubContribution = () => {
       console.log(contribObj.contributionCount);
       console.log(contribObj.contributionCalendar);
       setContribCount(contribObj.contributionCount);
+      setContribCalendar(contribObj.contributionCalendar);
     }
   }, [contribObj]);
 
@@ -118,6 +122,7 @@ export const GithubContribution = () => {
             </h1>{" "}
             contributions in github in the last year!
           </div>
+          <GithubCalendar calendarData={contribCalendar}></GithubCalendar>
         </div>
       )}
     </div>

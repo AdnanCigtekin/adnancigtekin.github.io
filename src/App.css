@@ -98,7 +98,7 @@
 .github-panel{
     background-color: #282e31;
     width : 80vw;
-    height : 30vh;
+    height : 50vh;
     margin:auto;
 }
 
@@ -106,4 +106,42 @@
     font-size: 3vh;
     text-align:center;
     padding: 3vh;
+}
+
+
+.calendar-node-empty{
+    margin-top: 1vh;
+    width: 1vw;
+    height: 1vw;
+    background-color: #7bd3ff;
+
+}
+
+.calendar-node-light{
+    margin-top: 1vh;
+    width: 1vw;
+    height: 1vw;
+    background-color: #3d6b82;
+}
+
+.calendar-node-medium{
+    margin-top: 1vh;
+    width: 1vw;
+    height: 1vw;
+    background-color: #243f4d;
+
+}
+
+
+.calendar-node-hard{
+    margin-top: 1vh;
+    width: 1vw;
+    height: 1vw;
+    background-color: #15262e;
+}
+
+.calendar-column{
+    padding-left: 0.5vw;
+    display: inline-block;
+    vertical-align: top;
 }
