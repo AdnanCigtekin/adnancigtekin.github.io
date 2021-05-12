@@ -110,6 +110,8 @@
 
 
 .calendar-node-hard{
+    position:relative;
+    right:100vw;
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
@@ -118,6 +120,8 @@
 }
 
 .calendar-node-medium{
+    position:relative;
+    right:100vw;
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
@@ -125,6 +129,8 @@
 }
 
 .calendar-node-light{
+    position:relative;
+    right:100vw;
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
@@ -134,6 +140,8 @@
 
 
 .calendar-node-empty{
+    position:relative;
+    right:100vw;
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;

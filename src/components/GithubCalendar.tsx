@@ -1,13 +1,15 @@
-
+import ReactAnime from 'react-animejs'
 
 
 
 export const GithubCalendar = (calendarData) => {
 
-    const emptyNode = <div className="calendar-node-empty"></div>
-    const lightNode = <div className="calendar-node-light"></div>
-    const mediumNode = <div className="calendar-node-medium"></div>
-    const hardNode = <div className="calendar-node-hard"></div>
+    const {Anime,stagger} = ReactAnime
+
+    const emptyNode = <div className="calendar-node-empty" id="calendar-node"></div>
+    const lightNode = <div className="calendar-node-light" id="calendar-node"></div>
+    const mediumNode = <div className="calendar-node-medium" id="calendar-node"></div>
+    const hardNode = <div className="calendar-node-hard" id="calendar-node"></div>
     
     
 
@@ -35,6 +37,17 @@ export const GithubCalendar = (calendarData) => {
 
 
     return <div>
+                    <Anime
+            initial={[
+                {
+                targets:"#calendar-node",
+                translateX : '99.75vw',
+                rotate: '5turn',
+                easing: "spring(1,50,50,0)",
+                delay : stagger(5) 
+            }
+        ]}
+        ></Anime>
         {res}
 
     </div>
