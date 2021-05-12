@@ -109,7 +109,7 @@
 }
 
 
-.calendar-node-empty{
+.calendar-node-hard{
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
@@ -117,14 +117,14 @@
 
 }
 
-.calendar-node-light{
+.calendar-node-medium{
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
     background-color: #3d6b82;
 }
 
-.calendar-node-medium{
+.calendar-node-light{
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
@@ -133,7 +133,7 @@
 }
 
 
-.calendar-node-hard{
+.calendar-node-empty{
     margin-top: 1vh;
     width: 1vw;
     height: 1vw;
