@@ -13,7 +13,7 @@ function App() {
         <ProfilePictureContainer></ProfilePictureContainer>
         <h1 className="my-name">Adnan Çığtekin</h1>
         <TitleContainer revealSpeed={75}></TitleContainer>
-        <div style={{ backgroundColor: "#2f3b42" }}>
+        <div  className="contact-container">
           <ContactContainer></ContactContainer>
         </div>
         <img

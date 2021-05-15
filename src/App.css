@@ -198,3 +198,12 @@
         text-align:center;
     }
  }
+
+ .contact-container{
+     background-color: #20292e;
+     position: fixed;
+     /* top: 0; required */
+     z-index: 1;
+     width:100vw;
+     height: 10vh;
+ }

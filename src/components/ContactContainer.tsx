@@ -12,10 +12,10 @@ export const ContactContainer = () => {
 
     return <div>
         <a href="https://www.linkedin.com/in/adnancigtekin/" rel="noreferrer" target="_blank">
-            <img src={LinkedinIcon} style={{width:"5vw",padding:"2vh"}} alt="My Linkedin Account"/>
+            <img src={LinkedinIcon} style={{width:"5vh",padding:"2vh"}} alt="My Linkedin Account"/>
         </a>
         <a href="https://github.com/AdnanCigtekin" rel="noreferrer" target="_blank">
-            <img src={GithubIcon} style={{width:"5vw",padding:"2vh"}} alt="My Github Account"/>
+            <img src={GithubIcon} style={{width:"5vh",padding:"2vh"}} alt="My Github Account"/>
         </a>
         {/* TODO: Enable this button when 'contact' section is created */}
         {/* <a onClick={SendMail} >
