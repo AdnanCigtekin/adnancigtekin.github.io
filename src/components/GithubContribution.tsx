@@ -4,9 +4,9 @@ import { devServer, IS_DEVELOPMENT, releaseServer } from "../consts/adressList";
 import { GithubRequestInterface } from "../ınterfaces/GithubRequestInterface";
 import { CheckInViewport } from "../utility/CheckInViewport";
 import ReactAnime from "react-animejs";
-import ReactLoading from 'react-loading';
-import {GithubCalendar} from './GithubCalendar'
-
+import ReactLoading from "react-loading";
+import { GithubCalendar } from "./GithubCalendar";
+import GithubIcon from "../resources/github.svg";
 
 export const GithubContribution = () => {
   const { Anime } = ReactAnime;
@@ -19,32 +19,25 @@ export const GithubContribution = () => {
 
   const [backendAwake, setBackendAwake] = useState(false);
 
-
-
   useEffect(() => {
-    if(backendAwake !== undefined){
+    if (backendAwake !== undefined) {
       const wakeInterval = setInterval(() => {
         axios
-        .get(
-          IS_DEVELOPMENT === 1
-            ? `${devServer}/wake`
-            : `${releaseServer}/wake`
-        )
-        .then((response) =>{
-          if(response.status == 200){
-            setBackendAwake(true)
-            console.log("Server woke")
-            clearInterval(wakeInterval)
-          }
-        }
-    
-        )
-        .catch((error) => {
-          console.error("There was an error!", error);
-        });
-      },1000)
+          .get(
+            IS_DEVELOPMENT === 1 ? `${devServer}/wake` : `${releaseServer}/wake`
+          )
+          .then((response) => {
+            if (response.status == 200) {
+              setBackendAwake(true);
+              console.log("Server woke");
+              clearInterval(wakeInterval);
+            }
+          })
+          .catch((error) => {
+            console.error("There was an error!", error);
+          });
+      }, 1000);
     }
-
   }, [backendAwake]);
 
   useEffect(() => {
@@ -87,20 +80,55 @@ export const GithubContribution = () => {
   return (
     <div>
       <div id="github-contribution"></div>
-      {showPath === false ||
-      contribCount === undefined ? (
+      {showPath === false || contribCount === undefined ? (
+        <div className="github-panel">
 
-          <div className="github-panel">
+            
+            <a
+              className="scraper-source"
+              href="https://github.com/AdnanCigtekin/github-scraper"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src={GithubIcon}
+                style={{ width: "2vw", padding: "2vh" }}
+                alt="Github scraper source code"
+              />
+              <div>
+              <p className="scraper-source-text">Source</p>
 
-          <div style={{width:'30vh',height:'50%',margin:'auto'}}>
-            <ReactLoading type={"cylon"} color={"#ffffff"} width={"30vh"} height={"50%"} />
+              </div>
+            </a>
 
+
+          <div style={{ width: "30vh", height: "50%", margin: "auto" }}>
+            <ReactLoading
+              type={"cylon"}
+              color={"#ffffff"}
+              width={"30vh"}
+              height={"50%"}
+            />
           </div>
         </div>
-        
-
       ) : (
         <div className="github-panel">
+          <a
+            className="scraper-source"
+            href="https://github.com/AdnanCigtekin/github-scraper"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src={GithubIcon}
+              style={{ width: "2vw", padding: "2vh" }}
+              alt="Github scraper source code"
+            />
+            <div>
+             <p className="scraper-source-text">Source</p>
+
+            </div>
+          </a>
           <div className="github-contrib-count">
             <Anime
               initial={[

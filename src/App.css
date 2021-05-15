@@ -155,3 +155,46 @@
     display: inline-block;
     vertical-align: top;
 }
+
+
+.scraper-source{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    float:right;
+    padding-right: 1vw;
+    padding-top: 1vh;
+
+}
+
+
+
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+    .scraper-source-text{
+        color: white;
+        font:bolder;
+        position: absolute; 
+        bottom: -1vh; 
+        left: 1.5vw; 
+        vertical-align: bottom;
+        font-size: 2vw;
+        align-content: center;
+        text-align:center;
+    }
+ }
+ /* Landscape */
+ @media screen and (orientation:landscape) {
+    .scraper-source-text{
+        color: white;
+        font:bolder;
+        position: absolute; 
+        bottom: -2vh; 
+        left: 0.5vw; 
+        vertical-align: bottom;
+        font-size: 2vh;
+        align-content: center;
+        text-align:center;
+    }
+ }
