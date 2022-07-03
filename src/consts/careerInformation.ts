@@ -6,8 +6,15 @@ import OtosanIcon from "../resources/otosan-icon.jpeg"
 export const careerInformation = [
     {
         "Company" : "Huawei",
-        "StartDate" : "March 2020",
+        "StartDate" : "May 2022",
         "EndDate" : "Ongoing",
+        "Title" : "Software Engineer",
+        "LogoUrl" : HuaweiIcon
+    },
+    {
+        "Company" : "Huawei",
+        "StartDate" : "March 2020",
+        "EndDate" : "April 2022",
         "Title" : "Assistant Software Engineer",
         "LogoUrl" : HuaweiIcon
     },
