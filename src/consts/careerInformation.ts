@@ -1,13 +1,21 @@
 import HuaweiIcon from "../resources/huawei-icon.jpeg"
 import ObssIcon from "../resources/obss-icon.jpeg"
 import OtosanIcon from "../resources/otosan-icon.jpeg"
+import KafeinIcon from "../resources/kafein-icon.jpeg"
 
 
 export const careerInformation = [
     {
+        "Company" : "Kafein",
+        "StartDate" : "Sep 2022",
+        "EndDate" : "Ongoing",
+        "Title" : "Software Developer",
+        "LogoUrl" : KafeinIcon
+    },
+    {
         "Company" : "Huawei",
         "StartDate" : "May 2022",
-        "EndDate" : "Ongoing",
+        "EndDate" : "Sep 2022",
         "Title" : "Software Engineer",
         "LogoUrl" : HuaweiIcon
     },
