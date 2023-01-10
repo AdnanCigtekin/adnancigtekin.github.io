@@ -31,10 +31,11 @@ function App() {
         <CareerPath></CareerPath>
         <div style={{ width: "10px", height: "5vh" }}></div>
       </div>
-      <div>
+      {/* REMOVED BECAUSE COULDN'T FIND A SUITABLE JAVA BACKEND HOSTING SERVICE YET :( */}
+      {/* <div>
         <GithubContribution></GithubContribution>
       </div>
-        <div style={{ width: "10px", height: "5vh" }}></div>
+        <div style={{ width: "10px", height: "5vh" }}></div> */}
     </div>
   );
 }
