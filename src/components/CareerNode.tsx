@@ -15,6 +15,10 @@ export const CareerNode = (careerInfo:CareerInfoInterface) => {
                     <p className="title-text">{careerInfo.info.Title}</p>
                     <p className="date-text">{careerInfo.info.StartDate}-{careerInfo.info.EndDate}</p>
                 </div>
+
+        </div>
+        <div>
+            <p className="company-detail">{careerInfo.info.JobDescription}</p>
         </div>
     </div>
 }
