@@ -2,16 +2,25 @@ import HuaweiIcon from "../resources/huawei-icon.jpeg"
 import ObssIcon from "../resources/obss-icon.jpeg"
 import OtosanIcon from "../resources/otosan-icon.jpeg"
 import KafeinIcon from "../resources/kafein-icon.jpeg"
+import SisalIcon from "../resources/sisal-icon.jpeg"
 
 
 export const careerInformation = [
     {
+        "Company" : "Sisal",
+        "StartDate" : "Sep 2023",
+        "EndDate" : "Ongoing",
+        "Title" : "Software Engineer",
+        "LogoUrl" : SisalIcon,
+        "JobDescription" : "I am responsible for development and maintenance of 'millipiyangoonline.com'"
+    },
+    {
         "Company" : "Kafein",
         "StartDate" : "Sep 2022",
-        "EndDate" : "Ongoing",
+        "EndDate" : "Sep 2023",
         "Title" : "Software Developer",
         "LogoUrl" : KafeinIcon,
-        "JobDescription" : "Currently, I am in an agile team that is developing an SMS analytics tool for marketing for a telecom company."
+        "JobDescription" : "I was in an agile team that is developing an SMS analytics tool for marketing for a telecom company."
     },
     {
         "Company" : "Huawei",
