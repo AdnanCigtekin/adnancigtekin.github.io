@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { devServer, IS_DEVELOPMENT, releaseServer } from "../consts/adressList";
-import { GithubRequestInterface } from "../ınterfaces/GithubRequestInterface";
+import { GithubRequestInterface } from "../interfaces/GithubRequestInterface";
 import { CheckInViewport } from "../utility/CheckInViewport";
 import ReactAnime from "react-animejs";
 import ReactLoading from "react-loading";

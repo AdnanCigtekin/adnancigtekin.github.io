@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 
 
 import { jobTitle } from "../consts/personalInformations";
-import {TitleInterface} from "../ınterfaces/PersonalInfoInterface"
+import {TitleInterface} from "../interfaces/PersonalInfoInterface"
 
 
 

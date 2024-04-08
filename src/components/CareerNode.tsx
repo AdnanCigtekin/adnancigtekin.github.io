@@ -1,6 +1,6 @@
 
 
-import {CareerInfoInterface} from "../ınterfaces/CareerInfoInterface";
+import {CareerInfoInterface} from "../interfaces/CareerInfoInterface";
 
 
 
